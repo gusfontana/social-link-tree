@@ -7,26 +7,21 @@
     <title>Social Media Link Tree</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!--<nav id="toggle">
-        <i class="indicator"></i>
-    </nav>-->
-
+<body class="background">
     <header>
-        <img src="images/gustavo.png" alt="profile-photo">
+        <img class="profile" src="images/gustavo.png" alt="profile-image">
         <h1>Gustavo Fontana</h1>
         <p>Web Developer</p>
     </header>
     <section>
-        <div>
             <!--<h3>See what I am up to:</h3>-->
             <ul>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Discord</a></li>
+                <li><button><a target= "_blank" href="https://github.com/gusfontana">GitHub</a></button></li>
+                <li><button><a target= "_blank" href="https://www.linkedin.com/in/gustavofontana/">LinkedIn</a></button></li>
+                <li><button><a target= "_blank" href="#">Twitter</a></button></li>
+                <li><button><a target= "_blank" href="#">Instagram</a></button></li>
+                <li><button><a target= "_blank" href="#">Discord</a></button></li>
             </ul>
-        </div>
         <!--<form action="">
             <label for=""><h3>Get in touch:</h3></label>
             <input type="text" name="name" id="name">Name:<br>
@@ -38,13 +33,5 @@
     <footer>
         <p>&copy; GustavoFontana</p>
     </footer>
-    <script>
-        const body = document.querySelector('body')
-        const toggle = document.getElementById('toggle')
-        toggle.onclick = function() {
-            toggle.classList.toggle('active')
-            body.classList.toggle('active')
-        }
-    </script>
 </body>
 </html>
