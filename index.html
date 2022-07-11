@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--<nav id="toggle">
+        <i class="indicator"></i>
+    </nav>-->
+
     <header>
-        <img src="#" alt="profile-photo">
+        <img src="images/gustavo.png" alt="profile-photo">
         <h1>Gustavo Fontana</h1>
-        <h2>Web Developer</h2>
+        <p>Web Developer</p>
     </header>
     <section>
         <div>
-            <h3>See what I am up to:</h3>
+            <!--<h3>See what I am up to:</h3>-->
             <ul>
                 <li><a href="#">GitHub</a></li>
                 <li><a href="#">Instagram</a></li>
@@ -23,16 +27,24 @@
                 <li><a href="#">Discord</a></li>
             </ul>
         </div>
-        <form action="">
+        <!--<form action="">
             <label for=""><h3>Get in touch:</h3></label>
             <input type="text" name="name" id="name">Name:<br>
             <input type="email" name="email" id="email">E-mail:<br>
             <textarea name="message" id="message" cols="30" rows="10">Message:</textarea><br>
             <button type="submit">Send e-mail</button>
-        </form>
+        </form>-->
     </section>
     <footer>
         <p>&copy; GustavoFontana</p>
     </footer>
+    <script>
+        const body = document.querySelector('body')
+        const toggle = document.getElementById('toggle')
+        toggle.onclick = function() {
+            toggle.classList.toggle('active')
+            body.classList.toggle('active')
+        }
+    </script>
 </body>
 </html>
