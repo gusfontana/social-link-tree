@@ -21,7 +21,6 @@
 body {
     height: 100%;
     width: 100vw;
-    /*background: linear-gradient(45deg, #BF0B3B, #bf0b3bea, #bf0b3bdc, #bf0b3bd4) no-repeat fixed;*/
 }
 .background {
     background: linear-gradient(135deg, var(--zigzag) 25%, var(--zigzag2) 25%) -50px 0,
@@ -29,15 +28,6 @@ body {
         linear-gradient(45deg, var(--zigzag) 25%, var(--zigzag2) 25%),
         linear-gradient(-45deg, var(--zigzag) 25%, var(--zigzag2) 25%);
     background-size: 100px 100px;
-    animation:  50s infinite linear;
-}
-@keyframes toBottom {
-    0% {
-        background-position: top;
-    }
-    100% {
-        background-position: bottom;
-    }
 }
 img {
     padding: 40px 0 10px;
@@ -71,7 +61,6 @@ a:hover,
 a:focus {
     box-shadow: 6px 6px black;
     transform: translate(2px, 2px);
-    /*letter-spacing: .1em;*/
 }
 a:active {
     box-shadow: 4px 4px black;
