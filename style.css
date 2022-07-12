@@ -1,7 +1,5 @@
 @charset "UTF-8";
 :root {
-    font-size: 16px;
-    font-family: 'Open Sans';
     --darker: #0D0D0D;
     --dark: #595959;
     --light: #D9D9D9;
@@ -30,12 +28,15 @@ body {
     background: white url(#) center center no-repeat fixed;
     animation: toptobottom 90s linear infinite;
 }*/
+p {
+    font-size: .9rem;
+}
 header {
     margin: auto;
-    padding: 20px;
+    padding-bottom: 20px;
 }
-section {
-    color: var(--darker);
+img {
+    padding: 10px;
 }
 li {
     padding: 10px;
@@ -43,7 +44,8 @@ li {
 button {
     background-color: white;
     box-shadow: 8px 8px black;
-    width: 400px;
+    max-width: 800px;
+    min-width: 300px;
     height: 40px;
     margin: auto;
     cursor: pointer;
