@@ -1,2 +1,2 @@
-# social-link-tree
- tree with personal social media branches
+# social-links
+ Pequeno projeto pessoal usando apenas HTML e CSS
