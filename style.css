@@ -28,18 +28,6 @@ body {
         linear-gradient(45deg, var(--zigzag) 25%, var(--zigzag2) 25%),
         linear-gradient(-45deg, var(--zigzag) 25%, var(--zigzag2) 25%);
     background-size: 100px 100px;
-<<<<<<< Updated upstream
-    animation: toBottom 25s linear infinite;
-}
-@keyframes toBottom {
-    from {
-        top: 0;
-    }
-    to {
-        bottom: 100%;
-    }
-=======
->>>>>>> Stashed changes
 }
 img {
     padding: 40px 0 20px;
