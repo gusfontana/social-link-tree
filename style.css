@@ -21,6 +21,7 @@
 body {
     height: 100%;
     width: 100vw;
+    /*background: linear-gradient(45deg, #BF0B3B, #bf0b3bea, #bf0b3bdc, #bf0b3bd4) no-repeat fixed;*/
 }
 .background {
     background: linear-gradient(135deg, var(--zigzag) 25%, var(--zigzag2) 25%) -50px 0,
@@ -28,47 +29,57 @@ body {
         linear-gradient(45deg, var(--zigzag) 25%, var(--zigzag2) 25%),
         linear-gradient(-45deg, var(--zigzag) 25%, var(--zigzag2) 25%);
     background-size: 100px 100px;
+    animation:  50s infinite linear;
+}
+@keyframes toBottom {
+    0% {
+        background-position: top;
+    }
+    100% {
+        background-position: bottom;
+    }
 }
 img {
-    padding: 40px 0 20px;
+    padding: 40px 0 10px;
 }
 header {
     margin: auto;
-    padding-bottom: 20px;
 }
 p {
     font: var(--font2);
 }
 main {
-    padding: 0 10px 45px;
+    padding: 20px 10px;
 }
 li {
-    padding: 10px;
+    padding: 15px;
 }
-button {
+a {
+    display: inline-block;
+    background: white;
     box-shadow: 8px 8px black;
     border: 2px solid black;
     width: clamp(100px, 100%, 600px); /*clamp(min, preferred, max)*/
     height: 45px;
+    padding: 7.5px;
+    text-decoration: none;
+    color: black;
     cursor: pointer;
+    transition: .1s;
 }
-button:hover {
+a:hover,
+a:focus {
     box-shadow: 6px 6px black;
     transform: translate(2px, 2px);
+    /*letter-spacing: .1em;*/
 }
-button:active {
+a:active {
     box-shadow: 4px 4px black;
     transform: translate(4px, 4px);
 }
-a {
-    color: black;
-    font: 1rem arial;
-    text-decoration: none;
-    padding: 10px;
-}
 footer {
     background: rgba(0, 0, 0, 0.094);
-    padding: 20px 0;
+    padding: 10px 0;
     width: 100vw;
     position: sticky;
     top: 100vh;
