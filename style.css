@@ -5,6 +5,8 @@
     --light: #D9D9D9;
     --redish: #BF0B3B;
     --redisher: #731022;
+    --zigzag: #bf0b3bc5;
+    --zigzag2: #bf0b3b47;
     --font1: normal 1.2rem arial;
     --font2: normal .9rem arial;
 }
@@ -19,26 +21,24 @@
 body {
     height: 100%;
     width: 100vw;
-    background: linear-gradient(45deg, #BF0B3B, #bf0b3bea, #bf0b3bdc, #bf0b3bd4) no-repeat fixed;
-    /*animation: toptobottom 5s linear infinite;*/
-    > footer {
-        position: sticky;
-        top: 100vh;
-    }
+    /*background: linear-gradient(45deg, #BF0B3B, #bf0b3bea, #bf0b3bdc, #bf0b3bd4) no-repeat fixed;*/
 }
-/*.background {
-    background: white url(images/waves.jpg) center center no-repeat fixed;
-    animation: toBottom 10s linear;
-    position: absolute;
+.background {
+    background: linear-gradient(135deg, var(--zigzag) 25%, var(--zigzag2) 25%) -50px 0,
+        linear-gradient(-135deg, var(--zigzag) 25%, var(--zigzag2) 25%) -50px 0,
+        linear-gradient(45deg, var(--zigzag) 25%, var(--zigzag2) 25%),
+        linear-gradient(-45deg, var(--zigzag) 25%, var(--zigzag2) 25%);
+    background-size: 100px 100px;
+    animation: toBottom 25s linear infinite;
 }
 @keyframes toBottom {
     from {
-        top: -500px;
+        top: 0;
     }
     to {
         bottom: 100%;
     }
-}*/
+}
 img {
     padding: 40px 0 20px;
 }
@@ -80,4 +80,6 @@ footer {
     background: rgba(0, 0, 0, 0.094);
     padding: 20px 0;
     width: 100vw;
+    position: sticky;
+    top: 100vh;
 }
