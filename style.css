@@ -78,9 +78,16 @@ a:active {
     transform: translate(4px, 4px);
 }
 footer {
-    background: rgba(0, 0, 0, 0.094);
+    background: hsl(0 0% 0% / .1);
     padding: 10px 0;
     width: 100vw;
     position: sticky;
     top: 100vh;
+}
+/*if the navigator supports backdrop-filters*/
+@supports (backdrop-filter:blur(.1rem)) {
+    footer {
+        background: hsl(0 0% 100% / .1);
+        backdrop-filter: blur(.1rem);
+    }
 }
