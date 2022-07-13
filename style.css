@@ -78,7 +78,7 @@ a:active {
     transform: translate(4px, 4px);
 }
 footer {
-    background: hsl(0 0% 0% / .1);
+    background: hsl(0 0% 100% / .1);
     padding: 10px 0;
     width: 100vw;
     position: sticky;
@@ -88,6 +88,6 @@ footer {
 @supports (backdrop-filter:blur(.1rem)) {
     footer {
         background: hsl(0 0% 100% / .1);
-        backdrop-filter: blur(.1rem);
+        backdrop-filter: blur(.4rem);
     }
 }
